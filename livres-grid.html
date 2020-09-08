@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta
+			name="description"
+			content="Ubook a modern educational site template"
+		/>
+		<meta name="author" content="Booking" />
+		<title>UBOOK | Modèle de site eBook moderne</title>
+
+		<!-- Favicons-->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link
+			rel="apple-touch-icon"
+			type="image/x-icon"
+			href="img/apple-touch-icon-57x57-precomposed.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			type="image/x-icon"
+			sizes="72x72"
+			href="img/apple-touch-icon-72x72-precomposed.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			type="image/x-icon"
+			sizes="114x114"
+			href="img/apple-touch-icon-114x114-precomposed.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			type="image/x-icon"
+			sizes="144x144"
+			href="img/apple-touch-icon-144x144-precomposed.png"
+		/>
+
+		<!-- GOOGLE WEB FONT -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800"
+			rel="stylesheet"
+		/>
+
+		<!-- BASE CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/vendors.css" rel="stylesheet" />
+		<link href="css/icon_fonts/css/all_icons.min.css" rel="stylesheet" />
+
+		<!-- SPECIFIC CSS -->
+		<link href="css/skins/square/grey.css" rel="stylesheet" />
+
+		<!-- YOUR CUSTOM CSS -->
+		<link href="css/custom.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="page" class="theia-exception">
+			<header class="header menu_2">
+				<div id="preloader"><div data-loader="circle-side"></div></div>
+				<!-- /Preload -->
+				<div id="logo">
+					<a href="index.html"
+						><img
+							src="img/_logo.png"
+							width="149"
+							height="42"
+							data-retina="true"
+							alt=""
+					/></a>
+				</div>
+				<ul id="top_menu">
+					<li><a href="login.html" class="login">S'IDENTIFIER</a></li>
+					<li><a href="#0" class="search-overlay-menu-btn">RECHERCHER</a></li>
+					<li class="hidden_tablet">
+						<a href="register.html" class="btn_1 rounded">S'INSCRIRE</a>
+					</li>
+				</ul>
+				<!-- /top_menu -->
+				<a href="#menu" class="btn_mobile">
+					<div class="hamburger hamburger--spin" id="hamburger">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</div>
+				</a>
+				<nav id="menu" class="main-menu">
+					<ul>
+						<li>
+							<span><a href="index.html">ACCUEIL</a></span>
+						</li>
+						<li>
+							<span><a href="livres-grid.html">CATÉGORIES</a></span>
+						</li>
+					</ul>
+				</nav>
+				<!-- Search Menu -->
+				<div class="search-overlay-menu">
+					<span class="search-overlay-close"
+						><span class="closebt"><i class="ti-close"></i></span
+					></span>
+					<form role="search" id="searchform" method="get">
+						<input
+							value=""
+							name="q"
+							type="search"
+							placeholder="Rechercher..."
+						/>
+						<button type="submit"><i class="icon_search"></i></button>
+					</form>
+				</div>
+				<!-- End Search Menu -->
+			</header>
+			<!-- /header -->
+
+			<main>
+				<section id="hero_in" class="livres">
+					<div class="wrapper">
+						<div class="container">
+							<h1 class="fadeInUp"><span></span>CATÉGORIES</h1>
+						</div>
+					</div>
+				</section>
+				<!--/hero_in-->
+
+				<div class="filters_listing sticky_horizontal">
+					<div class="container">
+						<ul class="clearfix">
+							<li>
+								<div class="switch-field">
+									<input
+										type="radio"
+										id="all"
+										name="listing_filter"
+										value="all"
+										checked
+									/>
+									<label for="all">Tous</label>
+									<input
+										type="radio"
+										id="popular"
+										name="listing_filter"
+										value="popular"
+									/>
+									<label for="popular">Populaires</label>
+									<input
+										type="radio"
+										id="latest"
+										name="listing_filter"
+										value="latest"
+									/>
+									<label for="latest">Meilleures</label>
+								</div>
+							</li>
+							<li>
+								<div class="layout_view">
+									<a href="#0" class="active"><i class="icon-th"></i></a>
+									<a href="livres-list.html"><i class="icon-th-list"></i></a>
+								</div>
+							</li>
+							<li>
+								<select name="orderby" class="selectbox">
+									<option value="category">Catégorie</option>
+									<option value="category 2">Nom</option>
+									<option value="category 3">Prix</option>
+									<option value="category 4">Date</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+					<!-- /container -->
+				</div>
+				<!-- /filters -->
+
+				<div class="container margin_60_35">
+					<div class="row">
+						<aside class="col-lg-3" id="sidebar">
+							<div id="filters_col">
+								<a
+									data-toggle="collapse"
+									href="#collapseFilters"
+									aria-expanded="false"
+									aria-controls="collapseFilters"
+									id="filters_col_bt"
+									>Filters
+								</a>
+								<div class="collapse show" id="collapseFilters">
+									<div class="filter_type">
+										<h6>Catégories</h6>
+										<ul>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" checked />Tous
+													<small>(945)</small>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />Architecture
+													<small>(45)</small>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />Managment
+													<small>(30)</small>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />Business
+													<small>(25)</small>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />Littérature
+													<small>(56)</small>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />Biologie
+													<small>(10)</small>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="filter_type">
+										<h6>Note</h6>
+										<ul>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />
+													<span class="rating"
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i>
+														<small>(145)</small></span
+													>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />
+													<span class="rating"
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i
+														><i class="icon_star"></i> <small>(25)</small></span
+													>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />
+													<span class="rating"
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i
+														><i class="icon_star"></i><i class="icon_star"></i>
+														<small>(68)</small></span
+													>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />
+													<span class="rating"
+														><i class="icon_star voted"></i
+														><i class="icon_star voted"></i
+														><i class="icon_star"></i><i class="icon_star"></i
+														><i class="icon_star"></i> <small>(34)</small></span
+													>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="checkbox" class="icheck" />
+													<span class="rating"
+														><i class="icon_star voted"></i
+														><i class="icon_star"></i><i class="icon_star"></i
+														><i class="icon_star"></i><i class="icon_star"></i>
+														<small>(10)</small></span
+													>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--/collapse -->
+							</div>
+							<!--/filters col-->
+						</aside>
+						<!-- /aside -->
+
+						<div class="col-lg-9">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="box_grid wow">
+										<figure class="block-reveal">
+											<div class="block-horizzontal"></div>
+											<a href="#0" class="wish_bt"></a>
+											<a href="livre-detail.html"
+												><img
+													src="img/book1.jpg"
+													class="img-fluid"
+													alt=""
+											/></a>
+											<div class="price">54 MAD</div>
+											<div class="preview"><span>Aperçu</span></div>
+										</figure>
+										<div class="wrapper">
+											<small>Category</small>
+											<h3>Persius delenit has cu</h3>
+											<p>
+												Id placerat tacimates definitionem sea, prima quidam vim
+												no. Duo nobis persecuti cu.
+											</p>
+											<div class="rating">
+												<i class="icon_star voted"></i
+												><i class="icon_star voted"></i
+												><i class="icon_star voted"></i><i class="icon_star"></i
+												><i class="icon_star"></i> <small>(96)</small>
+											</div>
+										</div>
+										<ul>
+											<li><i class="icon_clock_alt"></i> 1h 40min</li>
+											<li><i class="icon_like"></i> 540</li>
+											<li><a href="livre-detail.html">Ajouter au panier</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- /box_grid -->
+								<div class="col-md-6">
+									<div class="box_grid wow">
+										<figure class="block-reveal">
+											<div class="block-horizzontal"></div>
+											<a href="#0" class="wish_bt"></a>
+											<a href="livre-detail.html"
+												><img
+													src="img/book2.jpeg"
+													class="img-fluid"
+													alt=""
+											/></a>
+											<div class="price">39 MAD</div>
+											<div class="preview"><span>Aperçu</span></div>
+										</figure>
+										<div class="wrapper">
+											<small>Category</small>
+											<h3>At deseruisse scriptorem</h3>
+											<p>
+												Id placerat tacimates definitionem sea, prima quidam vim
+												no. Duo nobis persecuti cu.
+											</p>
+											<div class="rating">
+												<i class="icon_star voted"></i
+												><i class="icon_star voted"></i
+												><i class="icon_star voted"></i><i class="icon_star"></i
+												><i class="icon_star"></i> <small>(45)</small>
+											</div>
+										</div>
+										<ul>
+											<li><i class="icon_clock_alt"></i> 2h 15min</li>
+											<li><i class="icon_like"></i> 900</li>
+											<li><a href="livre-detail.html">Ajouter au panier</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- /box_grid -->
+								<div class="col-md-6">
+									<div class="box_grid wow">
+										<figure class="block-reveal">
+											<div class="block-horizzontal"></div>
+											<a href="#0" class="wish_bt"></a>
+											<a href="livre-detail.html"
+												><img
+													src="img/book3.jpg"
+													class="img-fluid"
+													alt=""
+											/></a>
+											<div class="price">40 MAD</div>
+											<div class="preview"><span>Aperçu</span></div>
+										</figure>
+										<div class="wrapper">
+											<small>Category</small>
+											<h3>Ea vel semper quaerendum</h3>
+											<p>
+												Id placerat tacimates definitionem sea, prima quidam vim
+												no. Duo nobis persecuti cu.
+											</p>
+											<div class="rating">
+												<i class="icon_star voted"></i
+												><i class="icon_star voted"></i
+												><i class="icon_star voted"></i><i class="icon_star"></i
+												><i class="icon_star"></i> <small>(120)</small>
+											</div>
+										</div>
+										<ul>
+											<li><i class="icon_clock_alt"></i> 1h 25min</li>
+											<li><i class="icon_like"></i> 760</li>
+											<li><a href="livre-detail.html">Ajouter au panier</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- /box_grid -->
+								<div class="col-md-6">
+									<div class="box_grid wow">
+										<figure class="block-reveal">
+											<div class="block-horizzontal"></div>
+											<a href="#0" class="wish_bt"></a>
+											<a href="livre-detail.html"
+												><img
+													src="img/book4.jpg"
+													class="img-fluid"
+													alt=""
+											/></a>
+											<div class="price">65 MAD</div>
+											<div class="preview"><span>Aperçu</span></div>
+										</figure>
+										<div class="wrapper">
+											<small>Category</small>
+											<h3>Ei has exerci graecis</h3>
+											<p>
+												Id placerat tacimates definitionem sea, prima quidam vim
+												no. Duo nobis persecuti cu.
+											</p>
+											<div class="rating">
+												<i class="icon_star voted"></i
+												><i class="icon_star voted"></i
+												><i class="icon_star voted"></i><i class="icon_star"></i
+												><i class="icon_star"></i> <small>(62)</small>
+											</div>
+										</div>
+										<ul>
+											<li><i class="icon_clock_alt"></i> 2h 10min</li>
+											<li><i class="icon_like"></i> 78</li>
+											<li><a href="livre-detail.html">Ajouter au panier</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- /box_grid -->
+								<div class="col-md-6">
+									<div class="box_grid wow">
+										<figure class="block-reveal">
+											<div class="block-horizzontal"></div>
+											<a href="#0" class="wish_bt"></a>
+											<a href="livre-detail.html"
+												><img
+													src="img/book5.jpeg"
+													class="img-fluid"
+													alt=""
+											/></a>
+											<div class="price">35 MAD</div>
+											<div class="preview"><span>Aperçu</span></div>
+										</figure>
+										<div class="wrapper">
+											<small>Category</small>
+											<h3>Decore tractatos</h3>
+											<p>
+												Id placerat tacimates definitionem sea, prima quidam vim
+												no. Duo nobis persecuti cu.
+											</p>
+											<div class="rating">
+												<i class="icon_star voted"></i
+												><i class="icon_star voted"></i
+												><i class="icon_star voted"></i><i class="icon_star"></i
+												><i class="icon_star"></i> <small>(29)</small>
+											</div>
+										</div>
+										<ul>
+											<li><i class="icon_clock_alt"></i> 1h 20min</li>
+											<li><i class="icon_like"></i> 230</li>
+											<li><a href="livre-detail.html">Ajouter au panier</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- /box_grid -->
+								<div class="col-md-6">
+									<div class="box_grid wow">
+										<figure class="block-reveal">
+											<div class="block-horizzontal"></div>
+											<a href="#0" class="wish_bt"></a>
+											<a href="livre-detail.html"
+												><img
+													src="img/book6.jpeg"
+													class="img-fluid"
+													alt=""
+											/></a>
+											<div class="price">47 MAD</div>
+											<div class="preview"><span>Aperçu</span></div>
+										</figure>
+										<div class="wrapper">
+											<small>Category</small>
+											<h3>Eam id legimus torquatos</h3>
+											<p>
+												Id placerat tacimates definitionem sea, prima quidam vim
+												no. Duo nobis persecuti cu.
+											</p>
+											<div class="rating">
+												<i class="icon_star voted"></i
+												><i class="icon_star voted"></i
+												><i class="icon_star voted"></i><i class="icon_star"></i
+												><i class="icon_star"></i> <small>(15)</small>
+											</div>
+										</div>
+										<ul>
+											<li><i class="icon_clock_alt"></i> 1h 15min</li>
+											<li><i class="icon_like"></i> 150</li>
+											<li><a href="livre-detail.html">Ajouter au panier</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /row -->
+							<p class="text-center">
+								<a href="#0" class="btn_1 rounded add_top_30">Voir plus</a>
+							</p>
+						</div>
+						<!-- /col -->
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+				<div class="bg_color_1">
+					<div class="container margin_60_35">
+						<div class="row">
+							<div class="col-md-4">
+								<a href="#0" class="boxed_list">
+									<i class="pe-7s-help2"></i>
+									<h4>Besoin d'aide? Contactez nous</h4>
+									<p>Cum appareat maiestatis interpretaris et, et sit.</p>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="#0" class="boxed_list">
+									<i class="pe-7s-wallet"></i>
+									<h4>Paiements et remboursements</h4>
+									<p>Qui ea nemore eruditi, magna prima possit eu mei.</p>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="#0" class="boxed_list">
+									<i class="pe-7s-note2"></i>
+									<h4>Normes de qualité</h4>
+									<p>Hinc vituperata sed ut, pro laudem nonumes ex.</p>
+								</a>
+							</div>
+						</div>
+						<!-- /row -->
+					</div>
+					<!-- /container -->
+				</div>
+				<!-- /bg_color_1 -->
+			</main>
+			<!--/main-->
+
+			<footer>
+				<div class="container margin_120_95">
+					<div class="row">
+						<div class="col-lg-5 col-md-12 p-r-5">
+							<p>
+								<img
+									src="img/_logo.png"
+									width="149"
+									height="42"
+									data-retina="true"
+									alt=""
+								/>
+							</p>
+							<p>
+								DÈS 2020 CYBERLIBRIS A PARIÉ SUR UNE NOUVELLE FORME D'ACCÈS Á LA
+								LECTURE. En inventant les premières bibliothèques numériques
+								communautaires accessibles en ligne sur simple abonnement
+								institutionnel forfaitaire, Cyberlibris a démocratisé l'accès au
+								livre numérique et au savoir.
+							</p>
+							<div class="follow_us">
+								<ul>
+									<li>Suivez nous</li>
+									<li>
+										<a href="#0"><i class="ti-facebook"></i></a>
+									</li>
+									<li>
+										<a href="#0"><i class="ti-twitter-alt"></i></a>
+									</li>
+									<li>
+										<a href="#0"><i class="ti-google"></i></a>
+									</li>
+									<li>
+										<a href="#0"><i class="ti-pinterest"></i></a>
+									</li>
+									<li>
+										<a href="#0"><i class="ti-instagram"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 ml-lg-auto">
+							<h5>Liens utiles</h5>
+							<ul class="links">
+								<li><a href="#0">Admission</a></li>
+								<li><a href="#0">À propos</a></li>
+								<li><a href="#0">S'identifier</a></li>
+								<li><a href="#0">S'inscrire</a></li>
+								<li><a href="#0">Nouvelles &amp; Événements</a></li>
+								<li><a href="#0">Contacts</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<h5>Contactez nous</h5>
+							<ul class="contacts">
+								<li>
+									<a href="tel://61280932400"
+										><i class="ti-mobile"></i> 05 22 22 22 22</a
+									>
+								</li>
+								<li>
+									<a href="mailto:info@ubook.com"
+										><i class="ti-email"></i> info@ubook.com</a
+									>
+								</li>
+							</ul>
+							<div id="newsletter">
+								<h6>Newsletter</h6>
+								<div id="message-newsletter"></div>
+								<form
+									method="post"
+									action="assets/newsletter.php"
+									name="newsletter_form"
+									id="newsletter_form"
+								>
+									<div class="form-group">
+										<input
+											type="email"
+											name="email_newsletter"
+											id="email_newsletter"
+											class="form-control"
+											placeholder="Votre email"
+										/>
+										<input
+											type="submit"
+											value="S'inscrire"
+											id="submit-newsletter"
+										/>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!--/row-->
+					<hr />
+					<div class="row">
+						<div class="col-md-8">
+							<ul id="additional_links">
+								<li><a href="#0">Conditions générales</a></li>
+								<li><a href="#0">Données personnelles</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<div id="copy">© 2020 Ubook</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--/footer-->
+		</div>
+		<!-- page -->
+
+		<!-- COMMON SCRIPTS -->
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/common_scripts.js"></script>
+		<script src="js/main.js"></script>
+		<script src="assets/validate.js"></script>
+	</body>
+</html>
